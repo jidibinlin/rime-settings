@@ -28,7 +28,7 @@
 #### 需要反查，打开所有带“反查”注释的行，和 reverse_lookup 块  #####
 patch:
   schema:
-    name: 明月拼音
+    name: 朙月拼音
     # dependencies: # 反查
     #   - liangfen # 反查
   

@@ -13,6 +13,7 @@ patch:
     - simplification
     - zh_hans
     - emoji_suggestion
+  switcher/caption: "〔切换方案〕"    
   menu/page_size: 8
   ascii_composer: # 设置caps、shift、control等键的作用
     good_old_caps_lock: true # 若为true，caps只切换大小写
