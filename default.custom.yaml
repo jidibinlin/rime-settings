@@ -41,12 +41,12 @@ patch:
     # - {accept: "Control+d", send: Delete, when: composing}
     # - {accept: "Control+k", send: "Shift+Delete", when: composing}
     # - {accept: "Control+h", send: BackSpace, when: composing}
-    # - {accept: "Control+g", send: Escape, when: composing}
+    - {accept: "Control+g", send: Escape, when: composing}
     # - {accept: "Control+bracketleft", send: Escape, when: composing}
     # - { when: has_menu, accept: semicolon, send: 2 }
     # - { when: has_menu, accept: apostrophe, send: 3 }
-    # - {accept: comma, send: Page_Up, when: paging}
-    # - {accept: period, send: Page_Down, when: has_menu}
+    - {accept: comma, send: Page_Up, when: paging}
+    - {accept: period, send: Page_Down, when: has_menu}
     # - {accept: "Control+Shift+1", select: .next, when: always}
     # - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
     # - {accept: "Control+Shift+3", toggle: full_shape, when: always}
