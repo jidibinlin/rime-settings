@@ -15,37 +15,40 @@ patch:
     style/color_scheme: win10
 
   # 以下修改皮肤
-  "style/display_tray_icon": true
   "style/horizontal": true #横排显示
-  "style/font_face": "Microsoft YaHei" #字体
-  "style/font_point": 13 #字体大小
-  "style/inline_preedit": true # 嵌入式候选窗单行显示
 
-  "style/layout/border_width": 0
+  "style/font_face": "Microsoft YaHei" #字体
+  "style/font_point": 14 #字体大小 感觉整个框的大小和字体绑定，14的字体13的框，边框宽度1或者0，argin_x和argin_y最大13，色块高度最大13
+  "style/inline_preedit": true #嵌入式候选窗单行显示
+
+  "style/layout/border_width": 1 #边框宽度
   "style/layout/border": 0
-  "style/layout/margin_x": 12 #候选字左右边距
-  "style/layout/margin_y": 12 #候选字上下边距
+  "style/layout/margin_x": 13 #字起始距左边距离
+  "style/layout/margin_y": 13 #字上下边距
   "style/layout/hilite_padding": 12 #候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
-  "style/layout/hilite_spacing": 3 # 序号和候选字之间的间隔
-  "style/layout/spacing": 10 #作用不明
-  "style/layout/candidate_spacing": 24 # 候选字间隔
+  "style/layout/hilite_spacing": 12 #序号和候选字之间的间隔
+
+  "style/layout/candidate_spacing": 23 #候选字间隔
   "style/layout/round_corner": 0 #候选字背景色块圆角幅度
 
-  "style/color_scheme": so_young
+  "style/label_format": "%s" #取消字号和字之间的.
+  "style/layout/min_width": 160
+  "style/layout/min_height": 0
+  
+  "style/color_scheme": Microsoft
 
   preset_color_schemes:
-    "Micosoft":
-      name: "Micosoft"
-      author: "XNOM"
-      back_color: 0xffffff #候选框 背景色
-      border_color: 0xD77800 #候选框 边框颜色
-      text_color: 0x000000 #已选择字 文字颜色
-      hilited_text_color: 0x000000 #已选择字右侧拼音 文字颜色
-      hilited_back_color: 0xffffff #已选择字右侧拼音 背景色
-      hilited_candidate_text_color: 0xffffff #候选字颜色
-      hilited_candidate_back_color: 0xD77800 #候选字背景色
-      candidate_text_color: 0x000000 #未候选字颜色
-      
+    "Microsoft":
+      name: "Microsoft"
+      back_color: 0xf4f4f4 #背景色
+      border_color: 0xdcdcdc #边框色
+      hilited_candidate_text_color: 0x000000 #已选字颜色 纯黑
+      hilited_candidate_back_color: 0xffd8a6 #已选字背景色
+      candidate_text_color: 0x000000 #候选字颜色 纯黑 
+      label_color: 0x656565 #候选字的数字颜色
+      hilited_label_color: 0x665645 #已选字的数字的颜色
+      comment_text_color: 0x000000 #所有[全角]、[半角]等提示文字颜色
+             
     "so_young":
       name: "致青春／So Young"
       author: "五磅兔 <zcunlin@foxmail.com>"
@@ -86,6 +89,7 @@ patch:
       # hilited_candidate_back_color: 0xcb5d00
       hilited_candidate_label_color: 0xefefef
       comment_text_color: 0xdedddd
+      
     "apathy":
       author: "LIANG Hai"
       back_color: 0xFFFFFF
