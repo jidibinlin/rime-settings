@@ -88,5 +88,8 @@ Option	ot
 Outlook	ol
 PolyWorks	poly
 PolyWorks Shanghai	pws
+DataLoop	dataloop
+ReportLoop	reportloop
+PMI+Loop	pmiloop
 huanglizhong@polyworks.com.cn	plyx
 aqua210@163.com	hlzyx
