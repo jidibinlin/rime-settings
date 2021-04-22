@@ -14,6 +14,9 @@
 #
 # no comment
 
+Apple ID	appleid
+Emoji	em
+EmEditor	eme
 中州韻輸入法引擎	rime	2
 又双叒叕	yyy
 http://rime.im/	rime	1
@@ -27,9 +30,11 @@ UTF-8	utfba
 macOS High Sierra	macos	2
 macOS Mojave	macos	3
 macOS	macos	4
-macOS Sierra	macos	1
+macOS Sierra	macos	5
+macOS BigSur	macos	1
 Google Analytics	ga
 macOS	macos
+Markdown	md
 Linux	linux
 CSS	css
 HTML html
@@ -47,6 +52,10 @@ Ruby	ruby
 Rust	rust
 WeChat	wechat
 Swift	swift
+Telegram	tg
+Twitter	tt
+USB-C	uc
+Windows	win
 MacBook Pro	mbp
 MacBook	macbook
 Apple	apple
@@ -61,6 +70,7 @@ IPv4	ipv
 IPv6	ipv
 Mac App Store	mas
 OS X	osx
+README.md	readme
 GNU/Linux	linux
 X-Ray	xray
 Xbox One	xbox
@@ -68,10 +78,15 @@ Youku	youku
 YouTube	youtube
 又双叒叕	yzyz
 iCloud	icloud
-Quantumult	quan
 Dropbox	dropbox
 T恤	txu
 Mac	mac
 Wi-Fi	wifi
-Apple ID	appleid
-QQ邮箱	qqyzxl
+QQ邮箱	qqyx
+OneDrive	one
+Option	ot
+Outlook	ol
+PolyWorks	poly
+PolyWorks Shanghai	pws
+huanglizhong@polyworks.com.cn	plyx
+aqua210@163.com	hlzyx
