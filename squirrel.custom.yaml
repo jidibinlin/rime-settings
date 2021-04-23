@@ -24,33 +24,10 @@ patch:
       ascii_mode: true
     com.apple.ActivityMonitor:
       ascii_mode: true
-    com.apple.keychainaccess:
-      ascii_mode: true
     com.apple.Spotlight:
       ascii_mode: true
-    com.jetbrains.intellij:
+    org.gnu.Emacs:
       ascii_mode: true
-    com.jetbrains.datagrip:
-      ascii_mode: true
-    com.jetbrains.pycharm:
-      ascii_mode: true
-    io.nteract.nteract:
-      ascii_mode: true
-    com.sequelpro.SequelPro:
-      ascii_mode: true
-    io.termix.client:
-      ascii_mode: true
-    com.agilebits.onepassword7:
-      ascii_mode: true
-    com.agilebits.onepassword7-helper:
-      ascii_mode: true
-    com.kapeli.dashdoc:
-      ascii_mode: true
-    com.svend.uPic:
-      ascii_mode: true
-    com.eusoft.eudic:
-      ascii_mode: true
-      
 
 # 如果想要修改皮肤，直接更改 color_scheme 的值即可
   style:
