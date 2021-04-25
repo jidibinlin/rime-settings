@@ -1,0 +1,53 @@
+patch:
+  schema/name: 自然码+
+  # 扩充词库
+  translator/dictionary: luna_pinyin.extended
+  'translator/preedit_format': {}  
+  
+  # 扩充符号库
+  punctuator:
+    import_preset: symbols
+    # 自定义快捷符号输入
+    # symbols:
+    #   "/fs": [½, ‰, ¼, ⅓, ⅔, ¾, ⅒ ]
+    half_shape:
+      "#": "#"
+      "*": "*"
+      "`": "`"
+      "~": "~"
+      "@": "@"
+      "=": "="
+      "/": ["/", "÷",]
+      '\': "、"
+      "_" : "──"
+      "'": {pair: ["「", "」"]}
+      "[": ["【", "["]
+      "]": ["】", "]"]
+      "$": ["¥", "$", "€", "£", "¢", "¤"]
+      "<": ["《", "〈", "«", "<"]
+      ">": ["》", "〉", "»", ">"]    
+    
+  recognizer/patterns/punct: "^/([A-Z|a-z]*|[0-9]|10)$"
+
+  # 自动造句 (阴阳鱼☯️️ 图标)
+  #zrm2000/enable_sentence: true
+
+  # 笔画反查
+  recognizer/patterns/reverse_lookup: "`b[a-z]*'?$"
+  reverse_lookup:
+    dictionary: stroke
+    enable_completion: true
+    prefix: "`b"
+    suffix: "'"
+    tips: 〔笔划反查〕
+    preedit_format:
+      - xlit/hspnz/一丨丿丶乙/
+    comment_format:
+      - xform/([nl])v/$1ü/
+
+# Rx: BlindingDark/rime-easy-en:customize:schema=double_pinyin_flypy
+# 若要启用 easy_en，取消注释下面两行
+  # __include: easy_en:/patch
+  # easy_en/enable_sentence: false # 中英文混输的设置
+# Rx: lotem/rime-octagram-data:customize:schema=luna_pinyin,model=hans
+  __include: grammar:/hant
