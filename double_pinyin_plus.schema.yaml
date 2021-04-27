@@ -21,9 +21,6 @@ switches:
   - name: ascii_mode
     reset: 0
     states: [ 中文, 西文 ]
-  - name: emoji_suggestion
-    reset: 1
-    states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]    
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
@@ -51,37 +48,16 @@ engine:
   translators:
     - punct_translator
     - reverse_lookup_translator
-    - table_translator@custom_phrase
     - table_translator@zrm2000
     - script_translator
   filters:
-    - simplifier@emoji_suggestion
     - simplifier
     - uniquifier
-
-custom_phrase:
-  db_class: stabledb
-  dictionary: ""
-  enable_completion: false
-  enable_sentence: false
-  initial_quality: 1
-  user_dict: custom_phrase
-
-english:
-  dictionary: english
-  enable_completion: true
-  enable_sentence: false
-  initial_quality: 0
 
 zrm2000:
   dictionary: zrm2000
   enable_sentence: false
   max_phrase_length: 8
-
-emoji_suggestion:
-  opencc_config: emoji.json
-  option_name: emoji_suggestion
-  #tips: all
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA.,
