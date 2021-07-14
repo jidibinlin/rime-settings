@@ -27,7 +27,7 @@ patch:
     good_old_caps_lock: true # 若为true，caps只切换大小写
     switch_key:
       Shift_L: noop
-      Shift_R: noop
+      Shift_R: inline_ascii
       Control_L: noop
       Control_R: noop
       Caps_Lock: commit_code
